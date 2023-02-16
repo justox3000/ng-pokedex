@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class PokemonService {
 
+  private url: string = environment.apiUrl + 'pokemon/';
+
   constructor() { }
 }
