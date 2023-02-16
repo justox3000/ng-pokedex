@@ -4,13 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-h1 {
-  font-family: 'Press Start 2P', cursive;
-  text-align: center;
-  font-size: 80px;
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-  color: rgb(244, 234, 44);
-}
 
 h3 {
   font-size: 24pt;
@@ -20,4 +13,162 @@ body {
   background-color: #feffbe;
   font-family: 'VT323', monospace;
   font-size: 16pt;
+}
+
+.bg-grass {
+  background-color: #66a823;
+}
+
+.bg-normal {
+	background-color: #A8A77A;
+	color: #fff;
+}
+
+.bg-fire {
+	background-color: #EE8130;
+	color: #fff;
+}
+
+.bg-water {
+	background-color: #6390F0;
+	color: #fff;
+}
+
+.bg-electric {
+	background-color: #F7D02C;
+	color: #fff;
+}
+
+.bg-grass {
+	background-color: #7AC74C;
+	color: #fff;
+}
+
+.bg-ice {
+	background-color: #96D9D6;
+	color: #fff;
+}
+
+.bg-fighting {
+	background-color: #C22E28;
+	color: #fff;
+}
+
+.bg-poison {
+	background-color: #A33EA1;
+	color: #fff;
+}
+
+.bg-ground {
+	background-color: #E2BF65;
+	color: #fff;
+}
+
+.bg-flying {
+	background-color: #A98FF3;
+	color: #fff;
+}
+
+.bg-psychic {
+	background-color: #F95587;
+	color: #fff;
+}
+
+.bg-bug {
+	background-color: #A6B91A;
+	color: #fff;
+}
+
+.bg-rock {
+	background-color: #B6A136;
+	color: #fff;
+}
+
+.bg-ghost, .bg-shadow {
+	background-color: #735797;
+	color: #fff;
+}
+
+.bg-dragon {
+	background-color: #6F35FC;
+	color: #fff;
+}
+
+.bg-dark {
+	background-color: #705746;
+	color: #fff;
+}
+
+.bg-steel {
+	background-color: #B7B7CE;
+	color: #fff;
+}
+.bg-fire {
+  background-color: rgb(252, 150, 8);
+  color: #fff;
+}
+
+.bg-water {
+  background-color: rgb(44, 44, 189);
+  color: #fff;
+}
+
+.bg-bug {
+  background-color: #37531b;
+  color: #fff;
+}
+
+.bg-normal {
+  background-color: rgb(241, 196, 140);
+  color: #fff;
+}
+
+.bg-poison {
+  background-color: purple;
+  color: #fff;
+}
+
+.bg-electric {
+  background-color: yellow;
+  color: #fff;
+}
+
+.bg-ground {
+  background-color: rgb(81, 65, 21);
+  color: #fff;
+}
+
+.bg-fighting {
+  background-color: rgb(146, 27, 27);
+  color: #fff;
+}
+
+.bg-psychic {
+  background-color: rgb(181, 88, 181);
+  color: #fff;
+}
+
+.bg-rock {
+  background-color: grey;
+  color: #fff;
+}
+
+.bg-ice {
+  background-color: lightblue;
+  color: #fff;
+}
+
+.bg-fairy {
+	background-color: #D685AD;
+  color: #fff;
+}
+
+.bg-unknown {
+	background-color: #aaa;
+  color: #fff;
+}
+
+.bg-ghost{
+  background-color: #735797;
+  color: #fff;
 }
