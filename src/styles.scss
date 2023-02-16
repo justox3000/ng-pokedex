@@ -2,6 +2,7 @@
 @import 'bootstrap/scss/bootstrap';
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 h1 {
   font-family: 'Press Start 2P', cursive;
@@ -11,6 +12,12 @@ h1 {
   color: rgb(244, 234, 44);
 }
 
+h3 {
+  font-size: 24pt;
+}
+
 body {
   background-color: #feffbe;
+  font-family: 'VT323', monospace;
+  font-size: 16pt;
 }
