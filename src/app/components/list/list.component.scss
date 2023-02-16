@@ -1,0 +1,198 @@
+
+
+.bg-grass {
+  background-color: #66a823;
+}
+
+.bg-fire {
+  background-color: rgb(252, 150, 8);
+}
+
+.bg-water {
+  background-color: rgb(44, 44, 189);
+}
+
+.bg-bug {
+  background-color: #37531b;
+}
+
+.bg-normal {
+  background-color: rgb(241, 196, 140);
+}
+
+.bg-poison {
+  background-color: purple;
+}
+
+.bg-electric {
+  background-color: yellow;
+}
+
+.bg-ground {
+  background-color: rgb(81, 65, 21);
+}
+
+.bg-fighting {
+  background-color: rgb(146, 27, 27);
+}
+
+.bg-psychic {
+  background-color: rgb(181, 88, 181);
+}
+
+.bg-rock {
+  background-color: grey;
+}
+
+.bg-ice {
+  background-color: lightblue;
+}
+
+.bg-fairy {
+	background-color: #D685AD;
+  color: #fff;
+}
+
+.bg-unknown {
+	background-color: #aaa;
+}
+
+.bg-ghost{
+  background-color: #735797;
+}
+
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.bg {
+	position: relative;
+  border: #C22E28;
+}
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+.custom-shape-divider-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+.custom-shape-divider-bottom .shape-fill,
+.custom-shape-divider-top .shape-fill {
+    fill: #FFFFFF;
+}
+
+.card {
+	cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.bg-normal {
+	background-color: #A8A77A;
+	color: #fff;
+}
+
+.bg-fire {
+	background-color: #EE8130;
+	color: #fff;
+}
+
+.bg-water {
+	background-color: #6390F0;
+	color: #fff;
+}
+
+.bg-electric {
+	background-color: #F7D02C;
+	color: #fff;
+}
+
+.bg-grass {
+	background-color: #7AC74C;
+	color: #fff;
+}
+
+.bg-ice {
+	background-color: #96D9D6;
+	color: #fff;
+}
+
+.bg-fighting {
+	background-color: #C22E28;
+	color: #fff;
+}
+
+.bg-poison {
+	background-color: #A33EA1;
+	color: #fff;
+}
+
+.bg-ground {
+	background-color: #E2BF65;
+	color: #fff;
+}
+
+.bg-flying {
+	background-color: #A98FF3;
+	color: #fff;
+}
+
+.bg-psychic {
+	background-color: #F95587;
+	color: #fff;
+}
+
+.bg-bug {
+	background-color: #A6B91A;
+	color: #fff;
+}
+
+.bg-rock {
+	background-color: #B6A136;
+	color: #fff;
+}
+
+.bg-ghost, .bg-shadow {
+	background-color: #735797;
+	color: #fff;
+}
+
+.bg-dragon {
+	background-color: #6F35FC;
+	color: #fff;
+}
+
+.bg-dark {
+	background-color: #705746;
+	color: #fff;
+}
+
+.bg-steel {
+	background-color: #B7B7CE;
+	color: #fff;
+}
+
+// .img-fluid {
+//   height: 50px;
+//   margin-top: 10px;
+//   margin-left: 10px;
+// }
