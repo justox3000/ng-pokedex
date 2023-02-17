@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { concat, Subscription } from 'rxjs';
-
-import { PokemonService } from '../../services/pokemon.service';
+import { CaughtPokemonService } from 'src/app/services/caught-pokemon.service';
+import { PokedexService } from '../../services/pokedex.service';
 
 @Component({
   selector: 'app-list',
@@ -11,13 +11,15 @@ import { PokemonService } from '../../services/pokemon.service';
 export class ListComponent implements OnInit, OnDestroy {
 
   loading: boolean = false;
-
   subscriptions: Subscription[] = [];
 
-  constructor(private pokemonService: PokemonService) { }
+  constructor(
+    private pokedexService: PokedexService,
+    private caughtPokemonService: CaughtPokemonService,
+    ) { }
 
   get pokemons(): any {
-    return this.pokemonService.pokemons;
+    return this.pokedexService.pokemons;
   }
 
   set subscription(subscription: Subscription) {
@@ -36,17 +38,17 @@ export class ListComponent implements OnInit, OnDestroy {
 
   loadMore(): void {
     this.loading = true;
-    this.subscription = this.pokemonService.getNext().subscribe((response: any) => {
-      this.pokemonService.next = response.next;
-      const details = response.results.map((i: any) => this.pokemonService.get(i.name));
+    this.subscription = this.pokedexService.getNext().subscribe((response: any) => {
+      this.pokedexService.next = response.next;
+      const details = response.results.map((i: any) => this.pokedexService.get(i.name));
       this.subscription = concat (...details).subscribe((pokemon: any) => {
-        this.pokemonService.pokemons.push(pokemon);
+        this.pokedexService.pokemons.push(pokemon);
       });
     }, error => console.log('Error Occured:', error), () => this.loading = false);
   }
 
   getType(pokemon: any): string {
-    return this.pokemonService.getType(pokemon);
+    return this.pokedexService.getType(pokemon);
   }
 
 }
