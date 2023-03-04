@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from '@angular/core';
-import { Observable } from "rxjs";
+import { map, Observable } from "rxjs";
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -50,5 +50,19 @@ export class PokedexService {
   getSpecies(name: string): Observable<any> {
     const url = `${environment.apiUrl}pokemon-species/${name}`;
     return this.http.get(url);
+  }
+
+  getPokeImage(index: number) {
+    return `environment.imageUrl}${index}.png`
+  }
+
+  findPokemon(search: string) {
+    return this.http.get(`${environment.apiUrl}pokemon/${search}`).pipe(
+      map((pokemon: { [x: string]: any; }) => {
+        pokemon['image'] = this.getPokeImage(pokemon['id']);
+        pokemon['pokeIndex'] = pokemon['id'];
+        return pokemon;
+      })
+    );
   }
 }
