@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class PokemonService {
+export class PokedexService {
 
   private url: string = environment.apiUrl + 'pokemon/';
   private _pokemons: any[] = [];
