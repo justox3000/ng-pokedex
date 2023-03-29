@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/core';
 import { concat, Subscription } from 'rxjs';
 import { CaughtPokemonService } from 'src/app/services/caught-pokemon.service';
 import { PokedexService } from '../../services/pokedex.service';
@@ -12,6 +12,9 @@ export class ListComponent implements OnInit, OnDestroy {
 
   loading: boolean = false;
   subscriptions: Subscription[] = [];
+  filteredPokemons: any[] = [];
+  searchInput: string = '';
+
 
   constructor(
     private pokedexService: PokedexService,
@@ -20,6 +23,11 @@ export class ListComponent implements OnInit, OnDestroy {
 
   get pokemons(): any {
     return this.pokedexService.pokemons;
+  }
+
+  get searchPokemons(): any {
+    return this.filteredPokemons;
+
   }
 
   set subscription(subscription: Subscription) {
@@ -49,6 +57,10 @@ export class ListComponent implements OnInit, OnDestroy {
 
   getType(pokemon: any): string {
     return this.pokedexService.getType(pokemon);
+  }
+
+  filterPokemons() {
+    this.filteredPokemons = this.pokedexService.pokemons.filter(pokemon => pokemon.name.toLowerCase().includes(this.searchInput.toLowerCase()));
   }
 
 }
