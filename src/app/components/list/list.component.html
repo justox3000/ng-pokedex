@@ -11,6 +11,7 @@
                   <!-- <div class="box box-blue badge stripes">
                     <img src="../../../assets/icons/search.png" alt="" />
                   </div> -->
+                  <!-- ... -->
                   <input type="text" [(ngModel)]="searchInput" (input)="filterPokemons()" placeholder="Search Pokemon">
                   <div *ngFor="let searchPokemon of searchPokemons; let i = index" class="col-md-6">
                     <div class="card mb-3 bg-{{getType(searchPokemon)}} d-flex justify-content-between" [routerLink]="['/view', searchPokemon.name]">
